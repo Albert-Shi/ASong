@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title>A Song</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="mycss.css" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script><!-- couldn't use like this <script type = "text/javascript" src = "jquery.js" /> -->
+    <script type="text/javascript" src="js/getSongsInfo.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var button = document.getElementById("serchButton").addEventListener("click",function () {
+                var text = document.getElementById("inputText").value;
+                SearchMusic(text);
+            },false);
+        }
+    </script>
+</head>
+<body>
+<div id = "container">
+    <img width="100%" height="180%" id = blurimg>
+    <div id = "head" align="center">
+        <h1 align="center">
+            A Song
+        </h1>
+        <input type="text" name="searchtext" id = "inputText">
+        <input type="button" value="search" id = "serchButton">
+    </div>
+
+    <div id = "mainbody" align="center">
+        <div id = "TextBody"></div>
+        <div id = "cicontainer">
+            <img id = "clearimg" height = "400px">
+        </div>
+        <br />
+        <br />
+        <audio controls="controls" autoplay="autoplay" id = "playaudio"></audio>
+    </div>
+
+    <div id = "tail">
+        <p align="center">
+            <br /><br />
+            &copy;2016 <b>联系作者</b><abbr title="send E-mail"><a href="mailto:1136313573@qq.com"> shishuheng </a></abbr>
+        </p>
+        <p align="center">
+            A Song
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+div#container{
+    width: 100%;
+    height: 1080px;
+}
+
+div#head{
+    width: 100%;
+    height: 10%;
+    align-content: center;
+    font-family: "Comic Sans MS";
+}
+
+div#mainbody{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+div#tail{
+    width: 100%;
+    height: 10%;
+    background-color: gray;
+    align-content: center;
+}
+
+div#TextBody{
+    width: 100%;
+    height: 20%;
+}
+
+div#cicontainer{
+}
+
+div#clearimg{
+    width: 50px;
+}
+
+.ClearImg img{
+    height : 100px;
+}
+
+img#blurimg{
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    z-index: -1;
+    -webkit-filter: blur(30px); /* Chrome, Opera */
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=30, MakeShadow=false);
+}
+
+audio#playaudio{
+    width: 50%;
+}
+
+.blur { /*http://zhidao.baidu.com/link?url=8QiowAf7hhXYtsD-0lbe1LCFCTAVZl0IR4OnjEzBKrpH1qtOpc9i_W0_oSbPoijHNi6ungoZVtJz0cUYE8vLTNKqjtfRq-hWcBjZWj3hsbm*/
+/*    filter: url(blur.svg#blur); FireFox, Chrome, Opera */
+
+    -webkit-filter: blur(30px); /* Chrome, Opera */
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=30, MakeShadow=false); /* IE6~IE9 */
+}
